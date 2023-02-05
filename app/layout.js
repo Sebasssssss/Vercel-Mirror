@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { font } from './font'
 import './globals.css'
 
 export default function RootLayout({ children }) {
@@ -8,10 +9,13 @@ export default function RootLayout({ children }) {
         <title>First app with Next 13</title>
       </head>
       <body>
-        <nav>
+        <nav className={font.className}>
           <ul>
             <li>
-              <Link href="/works">Works</Link>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/works">works</Link>
             </li>
             <li>
               <Link href="/posts">Posts</Link>
