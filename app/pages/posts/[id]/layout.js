@@ -12,7 +12,11 @@ export default async function Post({ children, params }) {
 
   return (
     <div>
-      <SinglePost title={title} body={body} href={`/posts/${id}/comments`} />
+      <SinglePost
+        title={title}
+        body={body}
+        href={`/pages/posts/${id}/comments`}
+      />
       <div>{children}</div>
     </div>
   )
