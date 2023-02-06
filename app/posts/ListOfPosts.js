@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Post from '../components/Post'
 
 const fetchPosts = async () => {
   return await fetch('https://jsonplaceholder.typicode.com/posts').then(res =>
@@ -9,12 +9,9 @@ const fetchPosts = async () => {
 export async function ListOfPosts() {
   const posts = await fetchPosts()
 
-  return posts.slice(0, 5).map(({ id, title, body }) => (
-    <article key={id}>
-      <Link href={`/posts/${id}`}>
-        <h1>{title}</h1>
-        <p>{body}</p>
-      </Link>
-    </article>
-  ))
+  return posts
+    .slice(0, 5)
+    .map(({ id, title, body }) => (
+      <Post id={id} title={title} body={body} key={id} />
+    ))
 }

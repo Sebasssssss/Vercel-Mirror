@@ -1,3 +1,10 @@
-export default function Loading() {
-  return <h1>Cargando comentarios...</h1>
+'use client'
+import { Loading } from '@geist-ui/core'
+
+export default function Loader() {
+  return (
+    <div style={{ width: '100%', margin: 'auto' }}>
+      <Loading />
+    </div>
+  )
 }

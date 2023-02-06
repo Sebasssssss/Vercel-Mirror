@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import SinglePost from '@/app/components/SinglePost'
 
 const fetchSinglePosts = async id => {
   return await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`).then(
@@ -8,16 +8,12 @@ const fetchSinglePosts = async id => {
 
 export default async function Post({ children, params }) {
   const { id } = params
-  const posts = await fetchSinglePosts(id)
+  const { title, body } = await fetchSinglePosts(id)
 
   return (
-    <>
-      <article key={posts.id} style={{ display: 'grid', gap: '20px' }}>
-        <h1>{posts.title}</h1>
-        <p>{posts.body}</p>
-        <Link href={`/posts/${id}/comments`}>Ver comentarios</Link>
-      </article>
+    <div>
+      <SinglePost title={title} body={body} href={`/posts/${id}/comments`} />
       <div>{children}</div>
-    </>
+    </div>
   )
 }
