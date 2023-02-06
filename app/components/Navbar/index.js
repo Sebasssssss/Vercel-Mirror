@@ -6,7 +6,12 @@ import { font } from '../../font'
 export default function Navbar() {
   return (
     <nav className={font.className}>
-      <ul>
+      <ul
+        style={{
+          display: 'flex',
+          justifyContent: 'center'
+        }}
+      >
         <Button>
           <Link href="/">Home</Link>
         </Button>

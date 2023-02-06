@@ -11,7 +11,9 @@ export default function RootLayout({ children }) {
       <body>
         <Provider>
           <Navbar />
-          {children}
+          <div style={{ maxWidth: '1200px', margin: 'auto', padding: '40px' }}>
+            {children}
+          </div>
         </Provider>
       </body>
     </html>
