@@ -11,10 +11,10 @@ export default function Navbar() {
           <Link href="/">Home</Link>
         </Button>
         <Button>
-          <Link href="/works">works</Link>
+          <Link href="/pages/works">works</Link>
         </Button>
         <Button>
-          <Link href="/posts">Posts</Link>
+          <Link href="/pages/posts">Posts</Link>
         </Button>
       </ul>
     </nav>
