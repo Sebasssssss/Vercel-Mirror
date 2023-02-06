@@ -8,12 +8,10 @@ export default function RootLayout({ children }) {
       <head>
         <title>First app with Next 13</title>
       </head>
-      <body>
+      <body className="bg-[#111111]">
         <Provider>
           <Navbar />
-          <div style={{ maxWidth: '1200px', margin: 'auto', padding: '40px' }}>
-            {children}
-          </div>
+          <div>{children}</div>
         </Provider>
       </body>
     </html>
