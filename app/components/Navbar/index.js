@@ -5,12 +5,11 @@ import TabNav from '../Tabs'
 import Image from 'next/image'
 import { Button } from '@geist-ui/core'
 import { Bell, ChevronUpDown } from '@geist-ui/icons'
-import { font } from '../../font'
 import avatar from '../../../public/avatar.jpg'
 
 export default function Navbar() {
   return (
-    <nav className={`${font.className} bg-black`}>
+    <nav className="bg-black">
       <div className="flex justify-between px-6">
         <div className="inline-flex items-center gap-2">
           <VercelIcon />
