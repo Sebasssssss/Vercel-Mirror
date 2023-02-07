@@ -11,13 +11,7 @@ import avatar from '../../../public/avatar.jpg'
 export default function Navbar() {
   return (
     <nav className={`${font.className} bg-black`}>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          padding: '20px'
-        }}
-      >
+      <div className="flex justify-between px-6">
         <div className="inline-flex items-center gap-2">
           <VercelIcon />
           <div className="bg-[#333] z-20 w-8 h-[1px] -rotate-[57deg]"></div>
@@ -34,10 +28,25 @@ export default function Navbar() {
           <Button width={-1} scale={0.5} style={{ fontSize: '13px' }}>
             Feedback
           </Button>
-          <div className="flex gap-4 opacity-50 text-sm">
-            <Link href="#">Changelog</Link>
-            <Link href="#">Help</Link>
-            <Link href="#">Docs</Link>
+          <div className="flex gap-4 text-sm">
+            <Link
+              href="#"
+              className="opacity-50 hover:opacity-100 transition-all duration-200"
+            >
+              Changelog
+            </Link>
+            <Link
+              href="#"
+              className="opacity-50 hover:opacity-100 transition-all duration-200"
+            >
+              Help
+            </Link>
+            <Link
+              href="#"
+              className="opacity-50 hover:opacity-100 transition-all duration-200"
+            >
+              Docs
+            </Link>
           </div>
           <div className="inline-flex items-center gap-1.5">
             <div className="rounded-full border border-[#333333] p-2 text-sm">
