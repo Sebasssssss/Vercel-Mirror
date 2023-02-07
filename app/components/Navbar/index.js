@@ -47,7 +47,7 @@ export default function Navbar() {
               Docs
             </Link>
           </div>
-          <div className="inline-flex items-center gap-1.5">
+          <div className="inline-flex items-center gap-3">
             <div className="rounded-full border border-[#333333] p-2 text-sm">
               <Bell size={16} />
             </div>
