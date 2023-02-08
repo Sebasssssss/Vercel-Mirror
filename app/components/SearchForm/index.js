@@ -7,9 +7,9 @@ export default function SearchForm() {
     <div className="inline-flex items-center gap-2 w-full">
       <Input
         icon={<Search />}
-        className="bg-black"
         placeholder="Search..."
         w="100%"
+        className="bg-black"
       />
       <div>
         <ButtonGroup>

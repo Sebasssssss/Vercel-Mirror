@@ -14,7 +14,9 @@ export default function Navbar() {
         <div className="inline-flex items-center gap-2">
           <VercelIcon />
           <div className="bg-[#333] z-20 w-8 h-[1px] -rotate-[57deg]"></div>
-          <Image src={avatar} alt="avatar" className="w-8 h-8 rounded-full" />
+          <div className="w-8 h-8 rounded-full overflow-hidden flex items-center justify-center">
+            <Image src={avatar} alt="avatar" width={32} height={32} />
+          </div>
           <h6 className="flex items-center gap-2 text-sm">
             Sebass
             <span className="bg-[#a3a3a3] text-black px-2 text-xs rounded-xl pt-0.5">
@@ -51,7 +53,9 @@ export default function Navbar() {
             <div className="rounded-full border border-[#333333] p-2 text-sm">
               <Bell size={16} />
             </div>
-            <Image src={avatar} alt="avatar" className="w-7 h-7 rounded-full" />
+            <div className="w-7 h-7 rounded-full overflow-hidden flex items-center justify-center">
+              <Image src={avatar} alt="secondAvatar" width={32} height={32} />
+            </div>
           </div>
         </div>
       </div>
