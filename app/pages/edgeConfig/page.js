@@ -36,7 +36,7 @@ export default function DomainsPage() {
             <Input icon={<Search />} placeholder="Search..." w="100%" />
             <Button icon={<Sliders size={20} />} auto scale={2 / 3} mb={0.5} />
           </div>
-          <div className="w-full h-96 border-dashed border border-[#333] grid place-items-center rounded-lg mt-10 bg-[#111]">
+          <div className="w-full h-96 border border-[#333] grid place-items-center rounded-lg mt-10 bg-[#111]">
             <div className="text-center">
               <div className="pb-9">
                 <h1 className="font-semibold py-2">No Stores</h1>
