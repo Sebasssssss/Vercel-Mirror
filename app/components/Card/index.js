@@ -17,13 +17,13 @@ export default function Card() {
       <div className="opacity-60 mt-3">
         <h1>Fixed some details</h1>
         <div className="inline-flex items-center gap-1 text-sm">
-          <GitBranch />
+          <GitBranch size={16} />
           From main
         </div>
       </div>
       <div>
         <h1 className="inline-flex items-center gap-1 mt-8 opacity-60">
-          6h ago via <Github />
+          6h ago via <Github size={16} />
         </h1>
       </div>
     </div>
