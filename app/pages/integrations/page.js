@@ -7,7 +7,7 @@ import avatar from '../../../public/avatar.jpg'
 
 export default function IntegrationsPage() {
   return (
-    <div className="">
+    <div>
       <div className="max-w-7xl p-4 mx-auto">
         <div className="flex flex-col sm:flex-row sm:justify-between p-4">
           <h1 className="text-3xl mb-6 sm:mb-3 sm:my-3">Integrations</h1>
