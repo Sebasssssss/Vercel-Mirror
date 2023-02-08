@@ -7,7 +7,7 @@ import avatar from '../../../public/avatar.jpg'
 
 export default function IntegrationsPage() {
   return (
-    <>
+    <div className="">
       <div className="max-w-7xl p-4 mx-auto">
         <div className="flex flex-col sm:flex-row sm:justify-between p-4">
           <h1 className="text-3xl mb-6 sm:mb-3 sm:my-3">Integrations</h1>
@@ -20,7 +20,7 @@ export default function IntegrationsPage() {
         </div>
       </div>
       <Divider />
-      <div className="max-w-7xl p-6 mx-auto flex flex-col lg:flex-row min-h-[500px] xl:min-h-[800px]">
+      <div className="max-w-7xl p-6 mx-auto flex flex-col lg:flex-row min-h-[500px] 2xl:min-h-[800px]">
         <div className="w-full">
           <Card>
             <div className="flex items-center justify-between">
@@ -85,6 +85,6 @@ export default function IntegrationsPage() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
