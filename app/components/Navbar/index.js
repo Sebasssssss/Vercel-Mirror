@@ -4,7 +4,7 @@ import VercelIcon from '../Icons/vercel'
 import TabNav from '../Tabs'
 import Image from 'next/image'
 import { Button } from '@geist-ui/core'
-import { Bell, ChevronUpDown } from '@geist-ui/icons'
+import { Bell, ChevronUpDown, Menu } from '@geist-ui/icons'
 import avatar from '../../../public/avatar.jpg'
 
 export default function Navbar() {
@@ -25,7 +25,11 @@ export default function Navbar() {
             <ChevronUpDown size={16} />
           </h6>
         </div>
-        <div className="inline-flex items-center gap-4">
+        <div className="inline-flex items-center gap-2 sm:hidden">
+          <Bell size={18} />
+          <Menu />
+        </div>
+        <div className="hidden sm:inline-flex items-center gap-4">
           <Button width={-1} scale={0.5} style={{ fontSize: '13px' }}>
             Feedback
           </Button>

@@ -1,11 +1,6 @@
 'use client'
-import { GeistProvider, CssBaseline } from '@geist-ui/core'
+import { GeistProvider } from '@geist-ui/core'
 
 export default function Provider({ children }) {
-  return (
-    <GeistProvider themeType="dark">
-      <CssBaseline />
-      {children}
-    </GeistProvider>
-  )
+  return <GeistProvider themeType="dark">{children}</GeistProvider>
 }
